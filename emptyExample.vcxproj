@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7FD42DF7-442E-479A-BA76-D0022F99702A}</ProjectGuid>
+    <RootNamespace>emptyExample</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectName>aquaero</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">obj\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">obj\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectName)_debug</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\libs\openFrameworks;..\..\..\libs\openFrameworks\graphics;..\..\..\libs\openFrameworks\app;..\..\..\libs\openFrameworks\sound;..\..\..\libs\openFrameworks\utils;..\..\..\libs\openFrameworks\communication;..\..\..\libs\openFrameworks\video;..\..\..\libs\openFrameworks\math;..\..\..\libs\openFrameworks\types;..\..\..\libs\openFrameworks\events;..\..\..\libs\glut\include;..\..\..\libs\rtAudio\include;..\..\..\libs\quicktime\include;..\..\..\libs\freetype\include;..\..\..\libs\freetype\include\freetype2;..\..\..\libs\freeImage\include;..\..\..\libs\fmodex\include;..\..\..\libs\videoInput\include;..\..\..\libs\glew\include\;..\..\..\libs\glu\include;..\..\..\libs\poco\include;..\..\..\addons;..\..\..\libs\openFrameworks\gl;..\..\..\libs\openFrameworks\3d;..\..\..\libs\tess2\include;..\..\..\libs\cairo\include\cairo;..\..\..\addons\ofxNetwork\src;..\..\..\addons\ofxDirList\src;..\..\..\addons\ofxObjLoader\src;..\..\..\addons\ofxOpenCv\libs\opencv\include;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv;..\..\..\addons\ofxOpenCv\src;..\..\..\addons\ofxOsc\src;..\..\..\addons\ofxOsc\libs\oscpack\include\ip;..\..\..\addons\ofxOsc\libs\oscpack\include\osc;..\..\..\addons\ofxThread\src;..\..\..\addons\ofxVectorGraphics\src;..\..\..\addons\ofxVectorGraphics\libs;..\..\..\addons\ofxVectorMath\src;..\..\..\addons\ofxXMLSettings\libs;..\..\..\addons\ofxXMLSettings\src;..\..\..\addons\ofx3DModelLoader\src;..\..\..\addons\ofx3DModelLoader\src\3DS;..\..\..\addons\ofxAssimpModelLoader\src;..\..\..\addons\ofxAssimpModelLoader\libs\assimp\include;..\..\..\addons\ofxThreadedImageLoader\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;POCO_STATIC;CAIRO_WIN32_STATIC_BUILD;DISABLE_SOME_FLOATING_POINT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>openframeworksLibDebug.lib;cairo-static.lib;pixman-1.lib;msimg32.lib;OpenGL32.lib;GLu32.lib;kernel32.lib;setupapi.lib;Vfw32.lib;comctl32.lib;glut32.lib;rtAudioD.lib;videoInput.lib;libfreetype.lib;FreeImage.lib;qtmlClient.lib;dsound.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;glew32s.lib;fmodex_vc.lib;glu32.lib;PocoFoundationmdd.lib;PocoNetmdd.lib;PocoUtilmdd.lib;PocoXMLmdd.lib;Ws2_32.lib;tess2.lib;..\..\..\addons\ofxOsc\libs\oscpack\lib\vs2010\oscpackd.lib;..\..\..\addons\ofxAssimpModelLoader\libs\assimp\lib\vs2010\assimp.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_calib3d220d.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_contrib220d.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_core220d.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_features2d220d.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_flann220d.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_gpu220d.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_highgui220d.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_imgproc220d.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_legacy220d.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_ml220d.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_objdetect220d.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_ts220d.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_video220d.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_lapackd.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\zlibd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\libs\glut\lib\vs2010;..\..\..\libs\rtAudio\lib\vs2010;..\..\..\libs\FreeImage\lib\vs2010;..\..\..\libs\freetype\lib\vs2010;..\..\..\libs\quicktime\lib\vs2010;..\..\..\libs\fmodex\lib\vs2010;..\..\..\libs\videoInput\lib\vs2010;..\..\..\libs\cairo\lib\vs2010;..\..\..\libs\cairo\lib\vs2010;..\..\..\libs\glew\lib\vs2010;..\..\..\libs\glu\lib\vs2010;..\..\..\libs\Poco\lib\vs2010;..\..\..\libs\openFrameworksCompiled\lib\vs2010;..\..\..\libs\tess2\lib\vs2010;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>atlthunk.lib; LIBC.lib; LIBCMT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(TargetDir)$(TargetName)_debugInfo.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Message>adding DLLs and creating data folder</Message>
+      <Command>xcopy /e /i /y "$(ProjectDir)..\..\..\export\vs2010\*.dll" "$(ProjectDir)bin"
+if not exist "$(ProjectDir)bin\data" mkdir  "$(ProjectDir)bin\data"
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;POCO_STATIC;CAIRO_WIN32_STATIC_BUILD;DISABLE_SOME_FLOATING_POINT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <AdditionalIncludeDirectories>addon\ofxLightning;addon\ofxGrabCam\src;addon\ofxBox2d\libs\triangle;addon\ofxBox2d\libs\Box2D\Dynamics\Joints;addon\ofxBox2d\libs\Box2D\Dynamics\Contacts;addon\ofxBox2d\libs\Box2D\Dynamics;addon\ofxBox2d\libs\Box2D\Common;addon\ofxBox2d\libs\Box2D\Collision\Shapes;addon\ofxBox2d\libs\Box2D\Collision;addon\ofxBox2d\libs\Box2D;addon\ofxBox2d\src;addon\ofxBox2d\libs;addon\ofxBox2d;..\..\..\libs\openFrameworks;..\..\..\libs\openFrameworks\graphics;..\..\..\libs\openFrameworks\app;..\..\..\libs\openFrameworks\sound;..\..\..\libs\openFrameworks\utils;..\..\..\libs\openFrameworks\communication;..\..\..\libs\openFrameworks\video;..\..\..\libs\openFrameworks\math;..\..\..\libs\openFrameworks\types;..\..\..\libs\openFrameworks\events;..\..\..\libs\glut\include;..\..\..\libs\rtAudio\include;..\..\..\libs\quicktime\include;..\..\..\libs\freetype\include;..\..\..\libs\freetype\include\freetype2;..\..\..\libs\freeImage\include;..\..\..\libs\fmodex\include;..\..\..\libs\videoInput\include;..\..\..\libs\glew\include\;..\..\..\libs\glu\include;..\..\..\libs\poco\include;..\..\..\addons;..\..\..\libs\openFrameworks\gl;..\..\..\libs\openFrameworks\3d;..\..\..\libs\tess2\include;..\..\..\libs\cairo\include\cairo;..\..\..\addons\ofxNetwork\src;..\..\..\addons\ofxDirList\src;..\..\..\addons\ofxObjLoader\src;..\..\..\addons\ofxOpenCv\libs\opencv\include;..\..\..\addons\ofxOpenCv\libs\opencv\include\opencv;..\..\..\addons\ofxOpenCv\src;..\..\..\addons\ofxOsc\src;..\..\..\addons\ofxOsc\libs\oscpack\include\ip;..\..\..\addons\ofxOsc\libs\oscpack\include\osc;..\..\..\addons\ofxThread\src;..\..\..\addons\ofxVectorGraphics\src;..\..\..\addons\ofxVectorGraphics\libs;..\..\..\addons\ofxVectorMath\src;..\..\..\addons\ofxXMLSettings\libs;..\..\..\addons\ofxXMLSettings\src;..\..\..\addons\ofx3DModelLoader\src;..\..\..\addons\ofx3DModelLoader\src\3DS;..\..\..\addons\ofxAssimpModelLoader\src;..\..\..\addons\ofxAssimpModelLoader\libs\assimp\include;..\..\..\addons\ofxThreadedImageLoader\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>openframeworksLib.lib;cairo-static.lib;pixman-1.lib;msimg32.lib;OpenGL32.lib;GLu32.lib;kernel32.lib;setupapi.lib;glut32.lib;rtAudio.lib;videoInput.lib;libfreetype.lib;FreeImage.lib;qtmlClient.lib;dsound.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;glew32s.lib;fmodex_vc.lib;glu32.lib;Vfw32.lib;comctl32.lib;PocoFoundationmd.lib;PocoNetmd.lib;PocoUtilmd.lib;PocoXMLmd.lib;Ws2_32.lib;tess2.lib;..\..\..\addons\ofxOsc\libs\oscpack\lib\vs2010\oscpack.lib;..\..\..\addons\ofxAssimpModelLoader\libs\assimp\lib\vs2010\assimp.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_calib3d220.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_contrib220.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_core220.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_features2d220.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_flann220.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_gpu220.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_highgui220.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_imgproc220.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_legacy220.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_ml220.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_objdetect220.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_ts220.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_video220.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\opencv_lapack.lib;..\..\..\addons\ofxOpenCv\libs\opencv\lib\vs2010\zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\libs\glut\lib\vs2010;..\..\..\libs\rtAudio\lib\vs2010;..\..\..\libs\FreeImage\lib\vs2010;..\..\..\libs\freetype\lib\vs2010;..\..\..\libs\quicktime\lib\vs2010;..\..\..\libs\fmodex\lib\vs2010;..\..\..\libs\videoInput\lib\vs2010;..\..\..\libs\cairo\lib\vs2010;..\..\..\libs\cairo\lib\vs2010;..\..\..\libs\glew\lib\vs2010;..\..\..\libs\glu\lib\vs2010;..\..\..\libs\Poco\lib\vs2010;..\..\..\libs\openFrameworksCompiled\lib\vs2010;..\..\..\libs\tess2\lib\vs2010;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>atlthunk.lib; LIBC.lib; LIBCMT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+    </Link>
+    <PostBuildEvent>
+      <Message>adding DLLs and creating data folder</Message>
+      <Command>xcopy /e /i /y "$(ProjectDir)\..\..\..\export\vs2010\*.dll" "$(ProjectDir)\bin"
+if not exist "$(ProjectDir)\bin\data" mkdir  "$(ProjectDir)\bin\data"
+
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\addons\ofxOpenCv\src\ofxCvColorImage.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOpenCv\src\ofxCvContourFinder.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOpenCv\src\ofxCvFloatImage.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOpenCv\src\ofxCvGrayscaleImage.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOpenCv\src\ofxCvHaarFinder.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOpenCv\src\ofxCvImage.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxOpenCv\src\ofxCvShortImage.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxVectorGraphics\libs\CreEPS.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxVectorGraphics\src\ofxVectorGraphics.cpp" />
+    <ClCompile Include="addon\ofxBox2d\libs\Box2D\Collision\b2BroadPhase.cpp" />
+    <ClCompile Include="addon\ofxBox2d\libs\Box2D\Collision\b2CollideCircle.cpp" />
+    <ClCompile Include="addon\ofxBox2d\libs\Box2D\Collision\b2CollidePolygon.cpp" />
+    <ClCompile Include="addon\ofxBox2d\libs\Box2D\Collision\b2Collision.cpp" />
+    <ClCompile Include="addon\ofxBox2d\libs\Box2D\Collision\b2Distance.cpp" />
+    <ClCompile Include="addon\ofxBox2d\libs\Box2D\Collision\b2DynamicTree.cpp" />
+    <ClCompile Include="addon\ofxBox2d\libs\Box2D\Collision\b2TimeOfImpact.cpp" />
+    <ClCompile Include="addon\ofxBox2d\libs\Box2D\Collision\Shapes\b2CircleShape.cpp" />
+    <ClCompile Include="addon\ofxBox2d\libs\Box2D\Collision\Shapes\b2PolygonShape.cpp" />
+    <ClCompile Include="addon\ofxBox2d\libs\Box2D\Common\b2BlockAllocator.cpp" />
+    <ClCompile Include="addon\ofxBox2d\libs\Box2D\Common\b2Math.cpp" />
+    <ClCompile Include="addon\ofxBox2d\libs\Box2D\Common\b2Settings.cpp" />
+    <ClCompile Include="addon\ofxBox2d\libs\Box2D\Common\b2StackAllocator.cpp" />
+    <ClCompile Include="addon\ofxBox2d\libs\Box2D\Dynamics\b2Body.cpp" />
+    <ClCompile Include="addon\ofxBox2d\libs\Box2D\Dynamics\b2ContactManager.cpp" />
+    <ClCompile Include="addon\ofxBox2d\libs\Box2D\Dynamics\b2Fixture.cpp" />
+    <ClCompile Include="addon\ofxBox2d\libs\Box2D\Dynamics\b2Island.cpp" />
+    <ClCompile Include="addon\ofxBox2d\libs\Box2D\Dynamics\b2World.cpp" />
+    <ClCompile Include="addon\ofxBox2d\libs\Box2D\Dynamics\b2WorldCallbacks.cpp" />
+    <ClCompile Include="addon\ofxBox2d\libs\Box2D\Dynamics\Contacts\b2CircleContact.cpp" />
+    <ClCompile Include="addon\ofxBox2d\libs\Box2D\Dynamics\Contacts\b2Contact.cpp" />
+    <ClCompile Include="addon\ofxBox2d\libs\Box2D\Dynamics\Contacts\b2ContactSolver.cpp" />
+    <ClCompile Include="addon\ofxBox2d\libs\Box2D\Dynamics\Contacts\b2PolygonAndCircleContact.cpp" />
+    <ClCompile Include="addon\ofxBox2d\libs\Box2D\Dynamics\Contacts\b2PolygonContact.cpp" />
+    <ClCompile Include="addon\ofxBox2d\libs\Box2D\Dynamics\Contacts\b2TOISolver.cpp" />
+    <ClCompile Include="addon\ofxBox2d\libs\Box2D\Dynamics\Joints\b2DistanceJoint.cpp" />
+    <ClCompile Include="addon\ofxBox2d\libs\Box2D\Dynamics\Joints\b2FrictionJoint.cpp" />
+    <ClCompile Include="addon\ofxBox2d\libs\Box2D\Dynamics\Joints\b2GearJoint.cpp" />
+    <ClCompile Include="addon\ofxBox2d\libs\Box2D\Dynamics\Joints\b2Joint.cpp" />
+    <ClCompile Include="addon\ofxBox2d\libs\Box2D\Dynamics\Joints\b2LineJoint.cpp" />
+    <ClCompile Include="addon\ofxBox2d\libs\Box2D\Dynamics\Joints\b2MouseJoint.cpp" />
+    <ClCompile Include="addon\ofxBox2d\libs\Box2D\Dynamics\Joints\b2PrismaticJoint.cpp" />
+    <ClCompile Include="addon\ofxBox2d\libs\Box2D\Dynamics\Joints\b2PulleyJoint.cpp" />
+    <ClCompile Include="addon\ofxBox2d\libs\Box2D\Dynamics\Joints\b2RevoluteJoint.cpp" />
+    <ClCompile Include="addon\ofxBox2d\libs\Box2D\Dynamics\Joints\b2WeldJoint.cpp" />
+    <ClCompile Include="addon\ofxBox2d\libs\triangle\del_impl.cpp" />
+    <ClCompile Include="addon\ofxBox2d\src\ofxBox2d.cpp" />
+    <ClCompile Include="addon\ofxBox2d\src\ofxBox2dBaseShape.cpp" />
+    <ClCompile Include="addon\ofxBox2d\src\ofxBox2dCircle.cpp" />
+    <ClCompile Include="addon\ofxBox2d\src\ofxBox2dJoint.cpp" />
+    <ClCompile Include="addon\ofxBox2d\src\ofxBox2dPolygon.cpp" />
+    <ClCompile Include="addon\ofxBox2d\src\ofxBox2dRect.cpp" />
+    <ClCompile Include="addon\ofxGrabCam\src\ofxGrabCam.cpp" />
+    <ClCompile Include="addon\ofxLightning\LightningBolt.cpp" />
+    <ClCompile Include="addon\ofxLightning\ofxLightning.cpp" />
+    <ClCompile Include="addon\ofxLightning\LSegment.cpp" />
+    <ClCompile Include="src\Asset.cpp" />
+    <ClCompile Include="src\BlobAnalyzer.cpp" />
+    <ClCompile Include="src\Boid.cpp" />
+    <ClCompile Include="src\Bubbles.cpp" />
+    <ClCompile Include="src\Circles.cpp" />
+    <ClCompile Include="src\Creature.cpp" />
+    <ClCompile Include="src\EnviroState.cpp" />
+    <ClCompile Include="src\Flocking.cpp" />
+    <ClCompile Include="src\FrameCaptureThread.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\OpticalFlow.cpp" />
+    <ClCompile Include="src\PointCompare.cpp" />
+    <ClCompile Include="src\Rain.cpp" />
+    <ClCompile Include="src\SpaceObject.cpp" />
+    <ClCompile Include="src\Stars.cpp" />
+    <ClCompile Include="src\testApp.cpp" />
+    <ClCompile Include="src\vectorField.cpp" />
+    <ClCompile Include="src\ZoneContainer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\addons\ofxOpenCv\src\ofxCvBlob.h" />
+    <ClInclude Include="..\..\..\addons\ofxOpenCv\src\ofxCvColorImage.h" />
+    <ClInclude Include="..\..\..\addons\ofxOpenCv\src\ofxCvConstants.h" />
+    <ClInclude Include="..\..\..\addons\ofxOpenCv\src\ofxCvContourFinder.h" />
+    <ClInclude Include="..\..\..\addons\ofxOpenCv\src\ofxCvFloatImage.h" />
+    <ClInclude Include="..\..\..\addons\ofxOpenCv\src\ofxCvGrayscaleImage.h" />
+    <ClInclude Include="..\..\..\addons\ofxOpenCv\src\ofxCvHaarFinder.h" />
+    <ClInclude Include="..\..\..\addons\ofxOpenCv\src\ofxCvImage.h" />
+    <ClInclude Include="..\..\..\addons\ofxOpenCv\src\ofxCvMain.h" />
+    <ClInclude Include="..\..\..\addons\ofxOpenCv\src\ofxCvShortImage.h" />
+    <ClInclude Include="..\..\..\addons\ofxOpenCv\src\ofxOpenCv.h" />
+    <ClInclude Include="..\..\..\addons\ofxVectorGraphics\libs\CreEPS.hpp" />
+    <ClInclude Include="..\..\..\addons\ofxVectorGraphics\src\ofxVectorGraphics.h" />
+    <ClInclude Include="addon\ofxBox2d\libs\Box2D\Box2D.h" />
+    <ClInclude Include="addon\ofxBox2d\libs\Box2D\Collision\b2BroadPhase.h" />
+    <ClInclude Include="addon\ofxBox2d\libs\Box2D\Collision\b2Collision.h" />
+    <ClInclude Include="addon\ofxBox2d\libs\Box2D\Collision\b2Distance.h" />
+    <ClInclude Include="addon\ofxBox2d\libs\Box2D\Collision\b2DynamicTree.h" />
+    <ClInclude Include="addon\ofxBox2d\libs\Box2D\Collision\b2TimeOfImpact.h" />
+    <ClInclude Include="addon\ofxBox2d\libs\Box2D\Collision\Shapes\b2CircleShape.h" />
+    <ClInclude Include="addon\ofxBox2d\libs\Box2D\Collision\Shapes\b2PolygonShape.h" />
+    <ClInclude Include="addon\ofxBox2d\libs\Box2D\Collision\Shapes\b2Shape.h" />
+    <ClInclude Include="addon\ofxBox2d\libs\Box2D\Common\b2BlockAllocator.h" />
+    <ClInclude Include="addon\ofxBox2d\libs\Box2D\Common\b2Math.h" />
+    <ClInclude Include="addon\ofxBox2d\libs\Box2D\Common\b2Settings.h" />
+    <ClInclude Include="addon\ofxBox2d\libs\Box2D\Common\b2StackAllocator.h" />
+    <ClInclude Include="addon\ofxBox2d\libs\Box2D\Dynamics\b2Body.h" />
+    <ClInclude Include="addon\ofxBox2d\libs\Box2D\Dynamics\b2ContactManager.h" />
+    <ClInclude Include="addon\ofxBox2d\libs\Box2D\Dynamics\b2Fixture.h" />
+    <ClInclude Include="addon\ofxBox2d\libs\Box2D\Dynamics\b2Island.h" />
+    <ClInclude Include="addon\ofxBox2d\libs\Box2D\Dynamics\b2TimeStep.h" />
+    <ClInclude Include="addon\ofxBox2d\libs\Box2D\Dynamics\b2World.h" />
+    <ClInclude Include="addon\ofxBox2d\libs\Box2D\Dynamics\b2WorldCallbacks.h" />
+    <ClInclude Include="addon\ofxBox2d\libs\Box2D\Dynamics\Contacts\b2CircleContact.h" />
+    <ClInclude Include="addon\ofxBox2d\libs\Box2D\Dynamics\Contacts\b2Contact.h" />
+    <ClInclude Include="addon\ofxBox2d\libs\Box2D\Dynamics\Contacts\b2ContactSolver.h" />
+    <ClInclude Include="addon\ofxBox2d\libs\Box2D\Dynamics\Contacts\b2PolygonAndCircleContact.h" />
+    <ClInclude Include="addon\ofxBox2d\libs\Box2D\Dynamics\Contacts\b2PolygonContact.h" />
+    <ClInclude Include="addon\ofxBox2d\libs\Box2D\Dynamics\Contacts\b2TOISolver.h" />
+    <ClInclude Include="addon\ofxBox2d\libs\Box2D\Dynamics\Joints\b2DistanceJoint.h" />
+    <ClInclude Include="addon\ofxBox2d\libs\Box2D\Dynamics\Joints\b2FrictionJoint.h" />
+    <ClInclude Include="addon\ofxBox2d\libs\Box2D\Dynamics\Joints\b2GearJoint.h" />
+    <ClInclude Include="addon\ofxBox2d\libs\Box2D\Dynamics\Joints\b2Joint.h" />
+    <ClInclude Include="addon\ofxBox2d\libs\Box2D\Dynamics\Joints\b2LineJoint.h" />
+    <ClInclude Include="addon\ofxBox2d\libs\Box2D\Dynamics\Joints\b2MouseJoint.h" />
+    <ClInclude Include="addon\ofxBox2d\libs\Box2D\Dynamics\Joints\b2PrismaticJoint.h" />
+    <ClInclude Include="addon\ofxBox2d\libs\Box2D\Dynamics\Joints\b2PulleyJoint.h" />
+    <ClInclude Include="addon\ofxBox2d\libs\Box2D\Dynamics\Joints\b2RevoluteJoint.h" />
+    <ClInclude Include="addon\ofxBox2d\libs\Box2D\Dynamics\Joints\b2WeldJoint.h" />
+    <ClInclude Include="addon\ofxBox2d\libs\triangle\assert.hpp" />
+    <ClInclude Include="addon\ofxBox2d\libs\triangle\del_interface.hpp" />
+    <ClInclude Include="addon\ofxBox2d\libs\triangle\dpoint.hpp" />
+    <ClInclude Include="addon\ofxBox2d\libs\triangle\triangle.h" />
+    <ClInclude Include="addon\ofxBox2d\libs\triangle\triangle_impl.hpp" />
+    <ClInclude Include="addon\ofxBox2d\src\ofxBox2d.h" />
+    <ClInclude Include="addon\ofxBox2d\src\ofxBox2dBaseShape.h" />
+    <ClInclude Include="addon\ofxBox2d\src\ofxBox2dCircle.h" />
+    <ClInclude Include="addon\ofxBox2d\src\ofxBox2dContactListener.h" />
+    <ClInclude Include="addon\ofxBox2d\src\ofxBox2dJoint.h" />
+    <ClInclude Include="addon\ofxBox2d\src\ofxBox2dPolygon.h" />
+    <ClInclude Include="addon\ofxBox2d\src\ofxBox2dPolygonUtils.h" />
+    <ClInclude Include="addon\ofxBox2d\src\ofxBox2dRect.h" />
+    <ClInclude Include="addon\ofxBox2d\src\ofxBox2dRender.h" />
+    <ClInclude Include="addon\ofxBox2d\src\ofxBox2dUtils.h" />
+    <ClInclude Include="addon\ofxGrabCam\src\ofxGrabCam.h" />
+    <ClInclude Include="addon\ofxLightning\LightningBolt.h" />
+    <ClInclude Include="addon\ofxLightning\ofxLightning.h" />
+    <ClInclude Include="addon\ofxLightning\LSegment.h" />
+    <ClInclude Include="src\Asset.h" />
+    <ClInclude Include="src\BlobAnalyzer.h" />
+    <ClInclude Include="src\Boid.h" />
+    <ClInclude Include="src\Bubbles.h" />
+    <ClInclude Include="src\Circles.h" />
+    <ClInclude Include="src\Creature.h" />
+    <ClInclude Include="src\Defines.h" />
+    <ClInclude Include="src\EnviroState.h" />
+    <ClInclude Include="src\Flocking.h" />
+    <ClInclude Include="src\FrameCaptureThread.h" />
+    <ClInclude Include="src\OpticalFlow.h" />
+    <ClInclude Include="src\PointCompare.h" />
+    <ClInclude Include="src\Rain.h" />
+    <ClInclude Include="src\SpaceObject.h" />
+    <ClInclude Include="src\Stars.h" />
+    <ClInclude Include="src\testApp.h" />
+    <ClInclude Include="src\vectorField.h" />
+    <ClInclude Include="src\ZoneContainer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\libs\openFrameworksCompiled\project\vs2010\openframeworksLib.vcxproj">
+      <Project>{5837595d-aca9-485c-8e76-729040ce4b0b}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
