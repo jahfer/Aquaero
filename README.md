@@ -12,11 +12,38 @@ This project was created for Design Studio 3 at Algonquin College, by Russell Ba
 ## The Code
 The project was written in C++ using OpenFrameworks with a number of add-ons, including:
 - [ofxBox2d](https://github.com/vanderlin/ofxBox2d/)
+- [Optical Flow]()
+- [Vector Field](http://teaching.thesystemis.com/classes/algo/?p=39)
 - [ofxGrabCam](https://github.com/elliotwoods/ofxGrabCam/)
 - [ofxLightning](https://github.com/companje/ofxLightning)
 
+The project utilized a large number of OpenFrameworks classes, including:
+- Threading 
+	- `ofThread`
+- Shaders
+	- `ofShader`
+- OpenCV
+	- `ofxCvColorImage`
+	- `ofxCvGrayscaleImage`
+	- `ofxCvContourFinder`
+	- `cv::FAST`
+	- `cv::calcOpticalFlowPyrLK` 
+- Paths/Polylines
+	- `ofPath`
+	- `ofPolyline`
+- FBOs and VBOs
+	- `ofFbo`
+	- `ofVbo`
+- Custom Event Handlers
+	- `ofEvent`
+- Video Player
+	- `ofVideoPlayer`
+- Audio
+	- `ofSoundPlayer`
+	- `ofSoundStream`
+
 ## The Team
-- [Russell Baylis](http://rbaylis.com	)
-- [Stacie Ha](http://stacieha.com)
-- [Jahfer Husain](http://jahfer.com) 
-- [Kyle Thompson](http://kylethompson.ca)
+- *[Russell Baylis](http://rbaylis.com):* Audio Recording/Programming, Environment Design
+- *[Stacie Ha](http://stacieha.com):* Asset Design, Flock Programming, Documentation
+- *[Jahfer Husain](http://jahfer.com):* Backend Development 
+- *[Kyle Thompson](http://kylethompson.ca):* Creature Programming
