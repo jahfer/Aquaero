@@ -17,6 +17,6 @@ The project was written in C++ using OpenFrameworks with a number of add-ons, in
 
 ## The Team
 - [Russell Baylis](http://rbaylis.com	)
-- [Stacie Ha](http:// stacieha.com)
+- [Stacie Ha](http://stacieha.com)
 - [Jahfer Husain](http://jahfer.com) 
 - [Kyle Thompson](http:// kylethompson.ca)
