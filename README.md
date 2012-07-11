@@ -19,4 +19,4 @@ The project was written in C++ using OpenFrameworks with a number of add-ons, in
 - [Russell Baylis](http://rbaylis.com	)
 - [Stacie Ha](http://stacieha.com)
 - [Jahfer Husain](http://jahfer.com) 
-- [Kyle Thompson](http:// kylethompson.ca)
+- [Kyle Thompson](http://kylethompson.ca)
